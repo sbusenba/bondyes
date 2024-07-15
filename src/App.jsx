@@ -1,13 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import TopNav from "./components/TopNav";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
+      <TopNav></TopNav>
       <h1 className="bondyes">
         Bond <span className="green">YES</span>!
       </h1>
