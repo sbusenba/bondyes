@@ -4,7 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
-
+.green {
+  color: #1d9210;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -28,7 +30,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  .bondyes {
     animation: logo-spin infinite 20s linear;
   }
 }
