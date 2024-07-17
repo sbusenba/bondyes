@@ -2,7 +2,6 @@ import TopNav from "./components/TopNav";
 import "./App.css";
 
 function App() {
-
   return (
     <>
       <TopNav></TopNav>
