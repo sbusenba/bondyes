@@ -1,10 +1,31 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Home from "./pages/Home";
+import Opposition from "./pages/Opposition";
+import AboutMe from "./pages/AboutMe";
+import Support from "./pages/Support";
+import App from "./App";
+import {
+  createHashRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const router = createHashRouter(
+  createRoutesFromElements(
+    <Route element={<App />} path="/">
+      <Route element={<Home />} path="" />
+      <Route element={<Opposition />} path="/opposition" />
+      <Route element={<AboutMe />} path="/aboutme" />
+      <Route element={<Support />} path="/support" />
+    </Route>
+  )
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
