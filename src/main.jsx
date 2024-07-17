@@ -15,7 +15,7 @@ import {
 
 const router = createHashRouter(
   createRoutesFromElements(
-    <Route element={<App />} path="/">
+    <Route element={<App />} path="/" errorElement={<div>Whoops! Broken!</div>}>
       <Route element={<Home />} path="" />
       <Route element={<Opposition />} path="/opposition" />
       <Route element={<AboutMe />} path="/aboutme" />
