@@ -15,7 +15,7 @@ function TopNav() {
           <Link to="/opposition">The Opposition</Link>
         </li>
         <li>
-          <Link to="/about">About Me</Link>
+          <Link to="/aboutme">About Me</Link>
         </li>
       </ul>
     </nav>
