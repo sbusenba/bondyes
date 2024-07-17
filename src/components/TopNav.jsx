@@ -1,17 +1,25 @@
 import "./TopNav.css";
+import { Link } from "react-router-dom";
 
-function TopNav () {
-
+function TopNav() {
   return (
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Voice Your Support</li>
-        <li>The Opposition</li>
-        <li>About Me</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/support">Voice Your Support</Link>
+        </li>
+        <li>
+          <Link to="/opposition">The Opposition</Link>
+        </li>
+        <li>
+          <Link to="/about">About Me</Link>
+        </li>
       </ul>
     </nav>
-  )
+  );
 }
 
 export default TopNav;
