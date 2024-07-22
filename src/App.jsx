@@ -1,7 +1,7 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import TopNav from "./components/TopNav";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -13,6 +13,7 @@ function App() {
         <p>Under construction, check back soon!</p>
       </div>
       <Outlet />
+      <Footer />
     </>
   );
 }
