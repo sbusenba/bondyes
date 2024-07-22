@@ -1,0 +1,14 @@
+.construction {
+  padding: 1em;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  background: repeating-linear-gradient(
+    60deg,
+    chocolate 1px,
+    chocolate 19px,
+    black 20px,
+    black 39px
+  );
+  transform: rotate(30deg);
+}
