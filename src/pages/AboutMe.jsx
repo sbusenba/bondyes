@@ -1,8 +1,9 @@
+import "/src/pages/aboutme.css";
 const AboutMe = () => {
   return (
     <div>
       <h1>About Me</h1>
-      {/* Add your content here */}
+      <img src="headshot.jpg"></img>
     </div>
   );
 };
