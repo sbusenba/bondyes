@@ -6,7 +6,7 @@ img {
 @media (max-width: 540px) {
   .headshot {
     margin: 1rem 1rem 1rem 1rem;
-    float: top;
+    float: none;
     width: fit-content;
     display: flex;
     align-self: center;
@@ -14,8 +14,7 @@ img {
   .about-me {
     display: flex;
     flex-direction: column;
-  }
-  .headshot > h3 {
+    align-items: center;
   }
 }
 
