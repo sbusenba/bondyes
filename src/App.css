@@ -6,6 +6,10 @@
 }
 .green {
   color: #1d9210;
+  font-weight: 800;
+}
+.black {
+  color: black;
 }
 .logo {
   height: 6em;

@@ -10,7 +10,7 @@ function App() {
       <TopNav />
       <div className="body">
         <h1 className="bondyes">
-          Bond <span className="green">YES</span>!
+          Bond <span className="green">YES!</span>
         </h1>
         <UnderConstruction />
         <Outlet />

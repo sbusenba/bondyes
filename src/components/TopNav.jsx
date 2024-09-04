@@ -6,7 +6,10 @@ function TopNav() {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <span className="black">Bond</span>{" "}
+            <span className="green">Yes!</span>
+          </Link>
         </li>
         <li>
           <Link to="/support">Voice Your Support</Link>
