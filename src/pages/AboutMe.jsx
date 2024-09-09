@@ -2,13 +2,13 @@ import "/src/pages/aboutme.css";
 const AboutMe = () => {
   return (
     <div>
-      <h3>Steven Busenbarrick</h3>
-      <hr />
       <h4>About me</h4>
+      <hr />
       <div className="about-me">
         <div className="bio">
           <div className="headshot">
             <img src="imgs/headshot.jpg"></img>
+            <h3>Steven Busenbarrick</h3>
           </div>
 
           <p>
