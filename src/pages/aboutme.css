@@ -1,16 +1,42 @@
 .about-me p {
   font-size: larger;
-  background-color: antiquewhite;
   margin: 0px;
   padding: 0.5rem;
-  color: #000000;
+  justify-self: center;
 }
 
 .bio {
   margin: 1rem;
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #aaaef9;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  hr {
+    border-color: #000;
+  }
+}
 
+.headshot h3 {
+  border-bottom: 1px solid black;
+  width: fit-content;
+  text-wrap: nowrap;
+}
 @media (max-width: 540px) {
+  .bio .headshot {
+    float: none;
+    margin: 0 0 0 0;
+  }
+  .headshot h3 {
+    text-wrap: balance;
+  }
   .bio {
     margin: 1rem auto 1rem auto;
     float: none;
@@ -21,7 +47,6 @@
     flex-direction: column;
     align-items: center;
   }
-
   .headshot img {
     width: auto;
     height: auto;
