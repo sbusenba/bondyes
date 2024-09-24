@@ -8,7 +8,13 @@
   -moz-osx-font-smoothing: grayscale;
   color-scheme: light dark;
   color: rgba(255, 255, 255);
-  background-color: #242424;
+  background-color: hsl(0, 0%, 14%);
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100dvh;
+  min-width: 320px;
 }
 
 a {
@@ -22,18 +28,24 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
-.body {
-  overflow: hidden;
+div.content {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: stretch;
+  padding: 1rem;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+.bondyes {
+  flex: 0 0 auto;
 }
 
 button {
@@ -54,9 +66,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-.body {
-  overflow: hidden;
-}
+
 @media (prefers-color-scheme: light) {
   #root {
     color: #213547;

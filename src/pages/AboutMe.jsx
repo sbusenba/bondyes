@@ -1,7 +1,7 @@
 import "/src/pages/aboutme.css";
 const AboutMe = () => {
   return (
-    <div>
+    <div id="profile">
       <h4>About me</h4>
       <hr />
       <div className="about-me">

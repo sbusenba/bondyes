@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <TopNav />
-      <div className="body">
+      <div className="content">
         <h1 className="bondyes">
           Bond <span className="green">YES!</span>
         </h1>
