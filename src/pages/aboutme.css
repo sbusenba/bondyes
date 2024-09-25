@@ -21,8 +21,6 @@
 }
 
 .headshot h3 {
-  border-bottom: 1px solid black;
-  width: fit-content;
   text-wrap: nowrap;
 }
 @media (max-width: 540px) {

@@ -9,6 +9,7 @@ const AboutMe = () => {
           <div className="headshot">
             <img src="imgs/headshot.jpg"></img>
             <h3>Steven Busenbarrick</h3>
+            <hr></hr>
           </div>
 
           <p>
