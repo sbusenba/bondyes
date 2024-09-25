@@ -13,13 +13,13 @@ const AboutMe = () => {
           </div>
 
           <p>
-            I am an aspiring web developer with a bachelors degree in Biomedical
-            Sciences from the University of South Florida. For the past year and
-            a half I have been following the Odin Project curriculum, teaching
-            myself web development, and working on my own passion projects. I
-            have a son in Ridgefield School District, and believe funding
-            education will not only help him, but all children in the district,
-            and the community as a whole.
+            I am an aspiring web developer with a B.S. in Biomedical Sciences
+            from the University of South Florida. For the past year and a half I
+            have been following the Odin Project curriculum, teaching myself web
+            development, and working on my own passion projects. I have a son in
+            Ridgefield School District, and believe funding education will not
+            only help him, but all children in the district, and the community
+            as a whole.
           </p>
         </div>
         <div className="about-links">
