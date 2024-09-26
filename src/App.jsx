@@ -9,9 +9,6 @@ function App() {
     <>
       <TopNav />
       <div className="content">
-        <h1 className="bondyes">
-          Bond <span className="green">YES!</span>
-        </h1>
         <UnderConstruction />
         <Outlet />
       </div>

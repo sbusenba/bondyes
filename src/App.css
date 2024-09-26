@@ -7,7 +7,9 @@
   color: #1d9210;
   font-weight: 800;
 }
-
+.content {
+  flex: 1 0 100dvh;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
