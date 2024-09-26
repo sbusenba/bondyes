@@ -1,25 +1,129 @@
 nav {
-  width: 100%;
+  max-width: 1280px;
   display: flex;
-  flex: 0 0 50px;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex: 0 1 auto;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   overflow-y: visible;
+  transition: all 1s ease;
+  z-index: 1;
 }
 
 nav > ul {
   max-width: 1280px;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: row;
-  flex: auto;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 20px;
+  justify-content: stretch;
+  align-items: stretch;
   list-style: none;
-  height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-block: 0;
 }
-nav > ul > li {
+a > button {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
   margin-left: 0;
   margin-right: 0;
+}
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1 1 25%;
+}
+.nav-item > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  flex: 1 1 25%;
+}
+
+.nav-expand-button {
+  visibility: hidden;
+  display: none;
+  flex: 0 1 0;
+}
+
+@media (max-width: 544px) {
+  nav .nav-item button {
+    width: 80dvw;
+    border-radius: 0;
+    border: none;
+    flex: 0 1 0;
+    overflow: hidden;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-item > a {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 0;
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+    border: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-expand-button {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    flex: 0 0 fit-content;
+  }
+  .nav-expand-button button {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem 0;
+    margin: 0;
+    flex: 1 0 fit-content;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+  li.expanded.nav-item > a > button {
+    padding: 1rem 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .expanded.nav-item * {
+    display: flex;
+    align-items: stretch;
+    flex: 1 0 auto;
+    border: none;
+  }
+
+  .expanded {
+    flex: 1 0 auto;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+  }
 }
