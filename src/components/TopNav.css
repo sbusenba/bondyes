@@ -2,9 +2,9 @@ nav {
   max-width: 1280px;
   display: flex;
   flex-direction: row;
-  flex: 0 1 auto;
+  flex: 1 1 5dvh;
   justify-content: stretch;
-  align-items: stretch;
+  align-items: center;
   padding: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   overflow-y: visible;
@@ -26,12 +26,11 @@ nav > ul {
 }
 a > button {
   display: flex;
-  flex-direction: row;
   flex: 1 0 auto;
-  align-items: center;
-  justify-content: center;
   margin-left: 0;
   margin-right: 0;
+  justify-content: center;
+  align-items: center;
 }
 .nav-item {
   display: flex;
@@ -54,6 +53,10 @@ a > button {
   flex: 0 1 0;
 }
 
+#bondyes {
+  margin: 0 0 0 0;
+  text-wrap: nowrap;
+}
 @media (max-width: 544px) {
   nav .nav-item button {
     width: 80dvw;

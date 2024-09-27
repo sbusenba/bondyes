@@ -35,7 +35,7 @@ div.content {
   display: flex;
   overflow: auto;
   flex-direction: column;
-  flex: 1 1 auto;
+  flex: 1 1 90dvh;
   align-items: stretch;
   padding: 1rem;
 }

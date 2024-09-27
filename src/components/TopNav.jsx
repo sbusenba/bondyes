@@ -14,7 +14,7 @@ function TopNav() {
         <li className={expanded ? "nav-item expanded" : "nav-item"}>
           <Link to="/" onClick={(e) => update(e)}>
             <button>
-              <h2 className="bondyes">
+              <h2 id="bondyes">
                 {"Bond "} <span className="green">YES!</span>
               </h2>
             </button>
