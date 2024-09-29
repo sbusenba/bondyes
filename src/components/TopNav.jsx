@@ -11,8 +11,8 @@ function TopNav() {
   return (
     <nav>
       <ul>
-        <li className={expanded ? "nav-item expanded" : "nav-item"}>
-          <Link to="/" onClick={(e) => update(e)}>
+        <li className="logo">
+          <Link to="/">
             <button>
               <h2 id="bondyes">
                 {"Bond "} <span className="green">YES!</span>
@@ -20,7 +20,11 @@ function TopNav() {
             </button>
           </Link>
         </li>
-
+        <li className="nav-expand-button">
+          <button onClick={(e) => update(e)}>
+            {expanded ? "Collapse" : "Menu"}
+          </button>
+        </li>
         <li className={expanded ? "nav-item expanded" : "nav-item"}>
           <Link to="/support" onClick={(e) => update(e)}>
             <button>Support</button>
@@ -36,12 +40,6 @@ function TopNav() {
           <Link to="/aboutme" onClick={(e) => update(e)}>
             <button onClick={(e) => update(e)}>About Me</button>
           </Link>
-        </li>
-
-        <li className="nav-expand-button">
-          <button onClick={(e) => update(e)}>
-            {expanded ? "Collapse" : "Menu"}
-          </button>
         </li>
       </ul>
     </nav>

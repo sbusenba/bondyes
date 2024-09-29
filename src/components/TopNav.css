@@ -1,10 +1,6 @@
 nav {
   max-width: 1280px;
-  display: flex;
-  flex-direction: row;
-  flex: 1 1 5dvh;
-  justify-content: stretch;
-  align-items: center;
+  flex: 0 1 5dvh;
   padding: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   overflow-y: visible;
@@ -14,43 +10,44 @@ nav {
 
 nav > ul {
   max-width: 1280px;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-block: 0;
 }
-a > button {
-  display: flex;
-  flex: 1 0 auto;
-  margin-left: 0;
-  margin-right: 0;
-  justify-content: center;
-  align-items: center;
+ul > * {
+  display: contents;
+}
+
+.logo {
+  grid-column: 1 / span 2;
+  grid-row: 1;
 }
 .nav-item {
-  display: flex;
-  flex-direction: row;
+  grid-column: auto;
+}
+.nav-item + .logo {
+  display: grid;
+  grid-row: 1;
   justify-content: center;
   align-items: stretch;
-  flex: 1 1 25%;
 }
+
 .nav-item > a {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
   align-items: stretch;
-  flex: 1 1 25%;
+  margin: 0 0;
 }
 
 .nav-expand-button {
   visibility: hidden;
   display: none;
-  flex: 0 1 0;
+  grid-column: 3;
 }
 
 #bondyes {
@@ -59,7 +56,6 @@ a > button {
 }
 @media (max-width: 544px) {
   nav .nav-item button {
-    width: 80dvw;
     border-radius: 0;
     border: none;
     flex: 0 1 0;
@@ -83,21 +79,21 @@ a > button {
   }
 
   .nav-expand-button {
+    grid-column: 2;
     visibility: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
-    flex: 0 0 fit-content;
   }
   .nav-expand-button button {
     width: 100%;
     border-radius: 0;
     padding: 1rem 0;
     margin: 0;
-    flex: 1 0 fit-content;
   }
   nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -112,21 +108,23 @@ a > button {
     justify-content: center;
   }
   .expanded.nav-item * {
-    display: flex;
+    display: inline-block;
     align-items: stretch;
-    flex: 1 0 auto;
     border: none;
   }
 
-  .expanded {
-    flex: 1 0 auto;
+  .nav-item.expanded {
+    display: block;
+    grid-column: 2;
+    grid-row: auto;
   }
   nav > ul {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-    justify-content: center;
-    align-items: stretch;
+    display: contents;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: max-content min-content;
+    grid-auto-rows: min-content;
+    flex: 0 1 0;
     padding: 0;
   }
 }
