@@ -11,16 +11,16 @@ function TopNav() {
   return (
     <nav>
       <ul>
-        <li className="logo">
+        <li className="logo nav-item">
           <Link to="/">
-            <button>
+            <button className="nav-button">
               <h2 id="bondyes">
                 {"Bond "} <span className="green">YES!</span>
               </h2>
             </button>
           </Link>
         </li>
-        <li className="nav-expand-button">
+        <li className="nav-item nav-expand-button">
           <button onClick={(e) => update(e)}>
             {expanded ? "Collapse" : "Menu"}
           </button>
